@@ -1,0 +1,30 @@
+{
+  "name": "scrapper",
+  "version": "1.0.0",
+  "main": "dist/app.js",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "env:load": "dotenv -e .env --",
+    "build": "tsc && tsc-alias",
+    "start:dev": "npm run env:load tsx  src/app.ts"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@esbuild-plugins/tsconfig-paths": "0.1.2",
+    "@types/node": "22.9.0",
+    "@types/node-fetch": "2.6.11",
+    "@types/prompts": "2.4.9",
+    "ts-node": "10.9.2",
+    "tsc-alias": "1.8.10",
+    "typescript": "5.6.3"
+  },
+  "dependencies": {
+    "discord.js-selfbot-v13": "3.4.2",
+    "dotenv-cli": "7.4.2",
+    "prompts": "2.4.2",
+    "tsconfig-paths": "4.2.0",
+    "tsx": "4.19.2",
+    "zod": "3.23.8"
+  }
+}
